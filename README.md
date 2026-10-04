@@ -24,4 +24,5 @@ Ce dépôt rassemble ma documentation personnelle des paramètres de régulation
 │   ├── 1620.md                # Libération ECS (HC / Programme horaire)
 │   ├── 5950.md                # Entrée logique H1
 │   └── 5970.md                # Entrée logique H2
+│   └── ....
 └── BSB_LAN_custom_defs.h      # Définitions custom personnelles BSB-LAN

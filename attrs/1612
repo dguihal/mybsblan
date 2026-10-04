@@ -1,0 +1,34 @@
+# 📘 Paramètre `1612` : Eau potable - Consigne réduite
+
+Ce paramètre définit la température minimale de maintien de l'eau chaude sanitaire (ECS) lorsque la régulation est en mode Éco ou en dehors des plages de libération horaire.
+
+> [!NOTE]
+> La consigne réduite évite que le ballon ne refroidisse totalement pendant les périodes creuses ou de non-utilisation, limitant ainsi la durée du cycle de relance suivant.
+
+---
+
+## ⚙️ Plage et Réglages
+
+| Caractéristique | Valeur |
+| :--- | :--- |
+| **Unité** | Degrés Celsius (°C) |
+| **Plage typique** | 8 °C à Consigne nominale ([`1610`](1610.md)) |
+| **Valeurs courantes** | 10 °C (Hors-gel / Désactivé) à 40 °C |
+
+---
+
+## 🛠️ Cas d'usage courants
+
+* **Mode Éco permanent / Périodes HP :**
+  Si le paramètre [`1600`](1600.md) est basculé sur **`2` (Éco)** pendant les Heures Pleines, le ballon ne se réenclenchera que si la température descend en dessous de cette valeur `1612`.
+
+* **Blocage strict des relances en journée :**
+  En réglant `1612` sur une valeur très basse (ex. 10 °C ou 20 °C), tu empêches virtuellement toute relance de la chauffe pendant les Heures Pleines, même en cas de fort soutirage d'eau chaude.
+
+---
+
+## 🔗 Paramètres associés
+
+* [`1600.md`](1600.md) : Mode de fonctionnement ECS (`0 = Arrêt`, `1 = Marche / Auto`, `2 = Eco`)
+* [`1610.md`](1610.md) : Consigne nominale de température ECS (°C)
+* [`1620.md`](1620.md) : Règle de libération ECS (Horaires / HC)
